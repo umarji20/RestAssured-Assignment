@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="5" ignored="0" total="19" passed="14">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="168729" started-at="2020-08-06T16:45:44 IST" finished-at="2020-08-06T16:48:33 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="168729" started-at="2020-08-06T16:45:44 IST" finished-at="2020-08-06T16:48:33 IST">
+      <class name="com.CucumberRunner_Assignment3">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setUpClass" is-config="true" duration-ms="430" started-at="2020-08-06T16:45:44 IST" finished-at="2020-08-06T16:45:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="5" started-at="2020-08-06T16:45:45 IST" finished-at="2020-08-06T16:45:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@411341bd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="7461" started-at="2020-08-06T16:45:45 IST" data-provider="scenarios" finished-at="2020-08-06T16:45:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the cardAuth_authorize API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:45:52 IST" finished-at="2020-08-06T16:45:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the cardAuth_authorize API with valid fields and verify the Expected Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:45:52 IST" finished-at="2020-08-06T16:45:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4c4d362a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="5104" started-at="2020-08-06T16:45:52 IST" data-provider="scenarios" finished-at="2020-08-06T16:45:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the cardAuth_authorize API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.jayway.jsonpath.PathNotFoundException">
+            <message>
+              <![CDATA[No results for path: $['access_token']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.jayway.jsonpath.PathNotFoundException: No results for path: $['access_token']
+at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
+at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:85)
+at com.api.service.Base_MoneyMovement.API_clientCredentials(Base_MoneyMovement.java:72)
+at com.stepdefs.Transactions_stepdefs.initiate_the_Client_Credentials_API_with_and_get_the_accessToken(Transactions_stepdefs.java:29)
+at ✽.Initiate the Client_Credentials_API with 'loan_authorization' and '/apis'  get the accessToken(file:///D:/Jyoti/API/Restassured_WithBaseclass/RestAssured.zip_expanded/./src/test/resources/features/TestCases.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.jayway.jsonpath.PathNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-08-06T16:45:57 IST" finished-at="2020-08-06T16:45:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the cardAuth_authorize API with valid fields and verify the Expected Result status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:45:57 IST" finished-at="2020-08-06T16:45:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2d72f75e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="5171" started-at="2020-08-06T16:45:57 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the cardAuth_authorize API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.jayway.jsonpath.PathNotFoundException">
+            <message>
+              <![CDATA[No results for path: $['access_token']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.jayway.jsonpath.PathNotFoundException: No results for path: $['access_token']
+at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
+at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:85)
+at com.api.service.Base_MoneyMovement.API_clientCredentials(Base_MoneyMovement.java:72)
+at com.stepdefs.Transactions_stepdefs.initiate_the_Client_Credentials_API_with_and_get_the_accessToken(Transactions_stepdefs.java:29)
+at ✽.Initiate the Client_Credentials_API with 'loan_authorization' and '/api'  get the accessToken(file:///D:/Jyoti/API/Restassured_WithBaseclass/RestAssured.zip_expanded/./src/test/resources/features/TestCases.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.jayway.jsonpath.PathNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:46:02 IST" finished-at="2020-08-06T16:46:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the cardAuth_authorize API with valid fields and verify the Expected Result status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:46:02 IST" finished-at="2020-08-06T16:46:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@8ab78bc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="7619" started-at="2020-08-06T16:46:02 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the Password API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:46:10 IST" finished-at="2020-08-06T16:46:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the Password API with valid fields and verify the Expected Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:46:10 IST" finished-at="2020-08-06T16:46:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5aa0dbf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="9202" started-at="2020-08-06T16:46:10 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate_the_Account_API_with_valid_fields_and_verify_the_Expected_Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="3" started-at="2020-08-06T16:46:19 IST" finished-at="2020-08-06T16:46:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate_the_Account_API_with_valid_fields_and_verify_the_Expected_Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="5" started-at="2020-08-06T16:46:19 IST" finished-at="2020-08-06T16:46:19 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@16afbd92]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="9424" started-at="2020-08-06T16:46:19 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the GET_Card API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:46:29 IST" finished-at="2020-08-06T16:46:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the GET_Card API with valid fields and verify the Expected Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="2" started-at="2020-08-06T16:46:29 IST" finished-at="2020-08-06T16:46:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2c5d601e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="8979" started-at="2020-08-06T16:46:29 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the GET_Card API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:46:38 IST" finished-at="2020-08-06T16:46:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the GET_Card API with valid fields and verify the Expected Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:46:38 IST" finished-at="2020-08-06T16:46:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7fe083b1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="9225" started-at="2020-08-06T16:46:38 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:46:47 IST" finished-at="2020-08-06T16:46:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:46:47 IST" finished-at="2020-08-06T16:46:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@23c388c2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="4586" started-at="2020-08-06T16:46:47 IST" data-provider="scenarios" finished-at="2020-08-06T16:46:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.jayway.jsonpath.PathNotFoundException">
+            <message>
+              <![CDATA[No results for path: $['access_token']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.jayway.jsonpath.PathNotFoundException: No results for path: $['access_token']
+at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
+at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:85)
+at com.api.service.Base_MoneyMovement.API_clientCredentials(Base_MoneyMovement.java:72)
+at com.stepdefs.Transactions_stepdefs.initiate_the_Client_Credentials_API_with_and_get_the_accessToken(Transactions_stepdefs.java:29)
+at ✽.Initiate the Client_Credentials_API with 'grant_type' and 'scope'  get the accessToken(file:///D:/Jyoti/API/Restassured_WithBaseclass/RestAssured.zip_expanded/./src/test/resources/features/TestCases.feature:61)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.jayway.jsonpath.PathNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:46:51 IST" finished-at="2020-08-06T16:46:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="2" started-at="2020-08-06T16:46:51 IST" finished-at="2020-08-06T16:46:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@486be205]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="8997" started-at="2020-08-06T16:46:51 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:00 IST" finished-at="2020-08-06T16:47:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:00 IST" finished-at="2020-08-06T16:47:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@f713686]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="4608" started-at="2020-08-06T16:47:00 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.jayway.jsonpath.PathNotFoundException">
+            <message>
+              <![CDATA[No results for path: $['access_token']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.jayway.jsonpath.PathNotFoundException: No results for path: $['access_token']
+at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
+at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:85)
+at com.api.service.Base_MoneyMovement.API_clientCredentials(Base_MoneyMovement.java:72)
+at com.stepdefs.Transactions_stepdefs.initiate_the_Client_Credentials_API_with_and_get_the_accessToken(Transactions_stepdefs.java:29)
+at ✽.Initiate the Client_Credentials_API with 'grant_type' and 'scope'  get the accessToken(file:///D:/Jyoti/API/Restassured_WithBaseclass/RestAssured.zip_expanded/./src/test/resources/features/TestCases.feature:61)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.jayway.jsonpath.PathNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:05 IST" finished-at="2020-08-06T16:47:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:05 IST" finished-at="2020-08-06T16:47:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@74f7d1d2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="10130" started-at="2020-08-06T16:47:05 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:47:15 IST" finished-at="2020-08-06T16:47:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate_the_Transactions_API_with_valid_fields_and_verify_the_Expected_Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="2" started-at="2020-08-06T16:47:15 IST" finished-at="2020-08-06T16:47:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4b4dd216]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="9207" started-at="2020-08-06T16:47:15 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the sourceAccounts & destination Eligibility API with valid fields and"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:24 IST" finished-at="2020-08-06T16:47:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the sourceAccounts & destination Eligibility API with valid fields and status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:24 IST" finished-at="2020-08-06T16:47:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5ca17ab0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="FAIL" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="5023" started-at="2020-08-06T16:47:24 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the sourceAccounts & destination Eligibility API with valid fields and"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.jayway.jsonpath.PathNotFoundException">
+            <message>
+              <![CDATA[No results for path: $['access_token']]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.jayway.jsonpath.PathNotFoundException: No results for path: $['access_token']
+at com.jayway.jsonpath.internal.path.EvaluationContextImpl.getValue(EvaluationContextImpl.java:133)
+at com.jayway.jsonpath.JsonPath.read(JsonPath.java:187)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:102)
+at com.jayway.jsonpath.internal.JsonContext.read(JsonContext.java:85)
+at com.api.service.Base_MoneyMovement.API_clientCredentials(Base_MoneyMovement.java:72)
+at com.stepdefs.Transactions_stepdefs.initiate_the_Client_Credentials_API_with_and_get_the_accessToken(Transactions_stepdefs.java:29)
+at ✽.Initiate the Client_Credentials_API with 'grant_type' and 'scope'  get the accessToken(file:///D:/Jyoti/API/Restassured_WithBaseclass/RestAssured.zip_expanded/./src/test/resources/features/TestCases.feature:83)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.jayway.jsonpath.PathNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:29 IST" finished-at="2020-08-06T16:47:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the sourceAccounts & destination Eligibility API with valid fields and status=FAILURE method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="2" started-at="2020-08-06T16:47:29 IST" finished-at="2020-08-06T16:47:29 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5a62b2a4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="11237" started-at="2020-08-06T16:47:29 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the sourceAccounts & destination Eligibility API with valid fields and"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:41 IST" finished-at="2020-08-06T16:47:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the sourceAccounts & destination Eligibility API with valid fields and status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="2" started-at="2020-08-06T16:47:41 IST" finished-at="2020-08-06T16:47:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1051817b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="12586" started-at="2020-08-06T16:47:41 IST" data-provider="scenarios" finished-at="2020-08-06T16:47:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the PDT-PreProcessAPI with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-08-06T16:47:53 IST" finished-at="2020-08-06T16:47:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the PDT-PreProcessAPI with valid fields and verify the Expected Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="1" started-at="2020-08-06T16:47:53 IST" finished-at="2020-08-06T16:47:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@35293c05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="12073" started-at="2020-08-06T16:47:53 IST" data-provider="scenarios" finished-at="2020-08-06T16:48:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify the PDT-PreProcess API with invalid sourceAccountId"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:48:05 IST" finished-at="2020-08-06T16:48:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=To verify the PDT-PreProcess API with invalid sourceAccountId status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="2" started-at="2020-08-06T16:48:05 IST" finished-at="2020-08-06T16:48:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@620aa4ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="14731" started-at="2020-08-06T16:48:05 IST" data-provider="scenarios" finished-at="2020-08-06T16:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Initiate the PDT-Confirmation API with valid fields and verify the Expected Result"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-08-06T16:48:20 IST" finished-at="2020-08-06T16:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Initiate the PDT-Confirmation API with valid fields and verify the Expected Result status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="setTestName(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="setTestName" is-config="true" duration-ms="0" started-at="2020-08-06T16:48:20 IST" finished-at="2020-08-06T16:48:20 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.maveric.core.cucumber.CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper) throws java.lang.Throwable]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2db2dd9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method status="PASS" signature="scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="scenario" duration-ms="12495" started-at="2020-08-06T16:48:20 IST" data-provider="scenarios" finished-at="2020-08-06T16:48:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To verify the PDT-Confirmation API with invalid controlFlowId"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[MoneyMovement Test Cases]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-08-06T16:48:33 IST" finished-at="2020-08-06T16:48:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=To verify the PDT-Confirmation API with invalid controlFlowId status=SUCCESS method=CucumberBaseTest.scenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.CucumberRunner_Assignment3@a2431d0]" name="tearDownClass" is-config="true" duration-ms="240" started-at="2020-08-06T16:48:33 IST" finished-at="2020-08-06T16:48:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.CucumberRunner_Assignment3 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

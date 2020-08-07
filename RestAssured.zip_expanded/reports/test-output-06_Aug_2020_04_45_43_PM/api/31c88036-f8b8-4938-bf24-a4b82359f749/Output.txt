@@ -1,0 +1,31 @@
+Request : GET
+URI : https://sandbox.apihub.citi.com/gcb/api/v1/accounts/1234/transactions?transactionStatus=POSTED
+Headers : 
+Authorization=Bearer AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhL1sxaA0Pcl8iVt-JhCN2eaiPKumF593mznSBw2tpMdIAZpdfTgZUn5e9nc3Hq-RLlOoKolToIbT8VhDfcZD8D52qQsIZ9LXNG7tsV33Ro18NVcqAaTXMp8S6WN-84UZfV_3Tz6QGQ8W52C3L6hg019c52JXGEFsVf_IQOyxWjmlFmSPUKkRH3ewta-2oXhgq8gr5h02yCeg7Senxe-8a6Q
+Accept=application/json
+uuid=dcff5b81-d19b-44c4-b621-f47564588469
+Client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+Params : 
+Response : 
+HTTP/1.1 400 Bad Request
+Headers : 
+X-Backside-Transport=FAIL FAIL,FAIL FAIL,FAIL FAIL
+uuid=dcff5b81-d19b-44c4-b621-f47564588469
+citiuuid=6682734f-4597-4049-b499-ebd611026335
+apitimestamp_4=2020-08-06T19:17:00.223+08:00
+apitimestamp_1=2020-08-06T19:17:00.184+08:00
+apitimestamp_2=2020-08-06T19:17:00.222+08:00
+Content-Type=application/json
+X-Global-Transaction-ID=126374ce5f2be6abe813a591
+Access-Control-Expose-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+Access-Control-Allow-Origin=
+Access-Control-Allow-Methods=GET,POST,PUT,DELETE
+Access-Control-Allow-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+mfaCode=hinHGL1ZHMXRdueBVhqx2LSVyCt1gp5rfTeB%2FvehV0e%2FcOZwsF3s%2FX0KsLGjS7Y%2F%2FGpDjgTvLi3W0sVYGvuIPlmCTqcpV3uAeAVkFXm9qu7WSAsJErxSTk%2F9FcDXqD09DEiUoYZTXxGR3c0RJSDp6KVBg1cUaowIHlQ57To52sS4a%2FlIfVvlcvkOPP09rc1KSTg0s%2FwZ09J9ATPSYxS4cSgQO3SbD9%2BP05f8%2BjbstjwNbZbK27sFfpAtDRBP%2BgF13D1hc%2B59Zzr3Rih5TP%2F1kwFsVtFt8OUIk7wEPeBy0r%2FG5MDMJPzJZSoAFkY1GXc35zlpIkPH1t%2BR67b5F9ExIrAaPh8QMDnhMuj0HyOY4ehQzIIdxKmdBx9BZTPV3xhC5G1kIXLoRS%2B7XEr7GyfYuKm7OEYUQp%2FXXg2Im4NsmfA%3D
+X-Akamai-CITISITE=GTDC
+Content-Length=84
+Date=Thu, 06 Aug 2020 11:17:00 GMT
+Connection=keep-alive
+Set-Cookie=CITI_SITE=gtdc; expires=Thu, 06-Aug-2020 11:37:00 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{"type":"invalid","code":"invalidRequest","details":"Missing or invalid Parameters"}

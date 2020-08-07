@@ -1,0 +1,200 @@
+
+    @Test
+        public void PDT_Confirmation_API(String ACCmethod) {
+    	
+    	System.out.println();
+    	 System.out.println();
+    	
+        System.out.println("Start of the API >>>  /gcb/api//v1/accounts");
+
+        RequestSpecification request = RestAssured.given();
+
+        Response response = request
+                .when()
+                .header("Authorization", Authorization_new)
+                .accept("application/json")
+                .header("uuid", UUID.randomUUID().toString())
+                .header("client_id", client_id)
+                .with()
+                .get(ACCmethod);
+
+
+        //System.out.println(response.statusCode());
+        System.out.println("**************************************************************************************");
+        //System.out.println(response.body().prettyPrint());
+        System.out.println("**************************************************************************************");
+        System.out.println("End of the API >>>  /gcb/api/v1/accounts");
+
+
+/*
+        System.out.println("Start of the API >>>  /gcb/api/v1/cards?cardFunction=ALL");
+        request = RestAssured.given();
+        response = request
+                .when()
+                .header("Authorization",Authorization_new)
+                .accept("application/json")
+                .header("uuid",UUID.randomUUID().toString())
+                .header("Client_id",client_id)
+                .with()
+                .get("/gcb/api/v1/cards?cardFunction=ALL");
+
+        System.out.println(response.statusCode());
+        System.out.println(response.body().prettyPrint());
+        System.out.println("End of the API >>>  /gcb/api/v1/cards?cardFunction=ALL");
+
+
+        String accountId="809433290433946686651706662332f634a375573535370634d706a6574315a2b534565795270615a3533664d";
+        System.out.println("Start of the API >>> /gcb/api//v1/accounts/"+accountId+"/transactions?transactionStatus=POSTED");
+        request = RestAssured.given();
+        response = request
+                .when()
+                .header("Authorization",Authorization_new)
+                .accept("application/json")
+                .header("uuid",UUID.randomUUID().toString())
+                .header("Client_id",client_id)
+                .with()
+                .get("/gcb/api//v1/accounts/"+accountId+"/transactions?transactionStatus=POSTED");
+
+        System.out.println(response.statusCode());
+        System.out.println(response.body().prettyPrint());
+        System.out.println("End of the API >>>  /gcb/api//v1/accounts/"+accountId+"/transactions?transactionStatus=POSTED");
+        */
+        System.out.println();
+        System.out.println();
+        System.out.println("Start of the API >>>   /gcb/api/v1/moneyMovement/personalDomesticTransfers/destinationAccounts/sourceAccounts");
+        System.out.println();
+        System.out.println();
+        request = RestAssured.given();
+        response = request
+                .when()
+                .header("Authorization",Authorization_new)
+                .accept("application/json")
+                .header("uuid",UUID.randomUUID().toString())
+                .header("Client_id",client_id)
+                .with()
+                .get("/gcb/api/v1/moneyMovement/personalDomesticTransfers/destinationAccounts/sourceAccounts");
+        System.out.println();
+        System.out.println("****************** Inside Source and Desitination account API  *********************");
+        System.out.println(response.statusCode());
+        System.out.println(response.body().prettyPrint());
+        System.out.println();
+        System.out.println();
+        System.out.println("End of the API >>>  /gcb/api/v1/moneyMovement/personalDomesticTransfers/destinationAccounts/sourceAccounts");
+        System.out.println();
+        System.out.println();
+
+        Sourceanddesinationaccount Sourceanddestinationaccount = response.getBody().as(Sourceanddesinationaccount.class);
+
+       // Get the source and destination account from the index directly if the account details are already known
+        
+        
+        String desitnationaccountid = Sourceanddestinationaccount.getDestinationSourceAcctCombinations().get(0).getDestinationAccountId();
+        System.out.println("********Destination account ID*************  : " + desitnationaccountid);
+        String sourceaccountId =Sourceanddestinationaccount.getDestinationSourceAcctCombinations().get(0).getSourceAccountIds().get(0).getSourceAccountId();
+        System.out.println("********Source account ID*************  : " + sourceaccountId);
+        System.out.println();
+        System.out.println();
+        
+        // Get the source and destination account from the response using For loop when the source and destination account details are not known
+
+
+       for(int Index = 0; Index < Sourceanddestinationaccount.getDestinationSourceAcctCombinations().size(); Index++)
+        	
+            {
+        	               
+        	   DestinationSourceAcctCombination DestinationSourceAcctCombinations = Sourceanddestinationaccount.getDestinationSourceAcctCombinations().get(Index) ;
+        	    
+        	          	            
+                  
+                  String desitaccount = null;
+                  
+                    try {
+                    	desitaccount = DestinationSourceAcctCombinations.getDestinationAccountId();
+                    	//.getAccounts().get(accountIndex).getSavingsAccountSummary().getAccountId();
+                        System.out.println("********Destination account ID*************  : " + desitaccount);
+                        
+                        
+                       
+                    }catch(Exception e){
+                    }
+                    
+                 for (int sosurceaccountindex = 0 ; sosurceaccountindex<DestinationSourceAcctCombinations.getSourceAccountIds().size();sosurceaccountindex++)
+                    
+                    {
+                    	String sourceacc = null;
+                    	try {
+                    		sourceacc = DestinationSourceAcctCombinations.getSourceAccountIds().get(sosurceaccountindex).getSourceAccountId();
+                        	//.getAccounts().get(accountIndex).getSavingsAccountSummary().getAccountId();
+                            System.out.println("********Source account ID*************  : " + sourceacc);
+                           
+                           
+                        }catch(Exception e){
+                        }
+                    	
+                    
+                } 
+            
+         }
+       System.out.println();
+        JSONObject payload = new JSONObject();
+        payload.put("sourceAccountId",sourceaccountId); //"788852522b34655255764b546638573230424439313956744f4a69414b71584e6a764a654e5272762b44633d"
+        payload.put("transactionAmount","10");
+        payload.put("transferCurrencyIndicator","SOURCE_ACCOUNT_CURRENCY");
+        payload.put("destinationAccountId",desitnationaccountid); //"90007745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d"
+        payload.put("chargeBearer","BENEFICIARY");
+        payload.put("fxDealReferenceNumber","123456");
+        payload.put("remarks","1");
+        System.out.println();
+        System.out.println();
+        System.out.println("Start of the API >>>  /gcb/api/v1/moneyMovement/personalDomesticTransfers/preprocess");
+        System.out.println();
+        System.out.println();
+        request = RestAssured.given();
+        response = request
+                .when()
+                .header("Authorization",Authorization_new)
+                .accept("application/json")
+                .contentType(ContentType.APPLICATION_JSON.getMimeType())
+                .header("uuid",UUID.randomUUID().toString())
+                .header("Client_id",client_id)
+                .with()
+                .body(payload.toString())
+                .post("/gcb/api/v1/moneyMovement/personalDomesticTransfers/preprocess");
+
+        System.out.println(response.statusCode());
+        ResponseBody body2 = response.body();
+        DocumentContext jsonContext2 = com.jayway.jsonpath.JsonPath.parse(body2.print());
+        String controlFlowID = jsonContext2.read("$.controlFlowId");
+        System.out.println();
+        System.out.println("End of the API >>>  /gcb/api/v1/moneyMovement/personalDomesticTransfers/preprocess");
+        
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Start of the API >>> /gcb/api/v1/moneyMovement/personalDomesticTransfers");
+        System.out.println();
+        System.out.println();
+        String payload_ControlFlowID="{\n" +
+                "  \"controlFlowId\": \""+controlFlowID+"\"\n" +
+                "}";
+        request = RestAssured.given();
+        response = request
+                .when()
+                .header("Authorization",Authorization_new)
+                .accept("application/json")
+                .contentType(ContentType.APPLICATION_JSON.getMimeType())
+                .header("uuid",UUID.randomUUID().toString())
+                .header("Client_id",client_id)
+                .with()
+                .body(payload_ControlFlowID)
+                .post("/gcb/api/v1/moneyMovement/personalDomesticTransfers");
+
+        System.out.println(response.statusCode());
+        System.out.println(response.body().prettyPrint());
+        System.out.println();
+        System.out.println();
+        System.out.println("End of the API >>>  /gcb/api/v1/moneyMovement/personalDomesticTransfers");
+        
+        System.out.println();
+
+    }

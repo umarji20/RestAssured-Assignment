@@ -1,0 +1,43 @@
+Request : GET
+URI : https://sandbox.apihub.citi.com/gcb/api/security/e2eKey
+Headers : 
+Authorization=Bearer AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhqerG6UJuttVx7EzlliGhoibYqcgxgyYL_gOsWQRp-a-I_qDX85vckXHHvTl55t-g-Tt49aAVPN2CUzA_R9gAQHkbjPj0BLbm3PKM55bXfw5q3BSmCnApRpxXdHGhxTljxRiOHTpJ-U5mgTLI0v8_0Nc1HK7-RGss09mHU-JsDOdqqXAexPf1_eg0BMLMAUgbc4Y0TxgWcseJO6k3v9z-tNOGSNXcZUQbyIF48JmcH0M
+client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+client_secret=tH8gT8gC6kV2bR3hK6mM5kL3dT2cQ4bJ8iN4eH3nA6wW2aA7uJ
+uuid=c1fa9600-60ff-4ed0-bfd5-89644de3885f
+Accept=application/json
+countryCode=PL
+businessCode=GCB
+channelId=SSA
+Content-Type=application/json; charset=UTF-8
+Params : 
+Response : 
+HTTP/1.1 200 OK
+Headers : 
+X-Backside-Transport=OK OK,OK OK,OK OK
+Server=Apache-Coyote/1.1
+eventid=b2f06a16-157e-4a9d-99fe-a54d88f842c5
+x-powered-by=LISA/10.5.2 (10.5.2.702)
+citiuuid=89850aa2-dca3-4553-b940-f29d7c06eb68
+Content-Type=application/json
+X-Global-Transaction-ID=ddade3ba5f28f03927591377
+Access-Control-Expose-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+Access-Control-Allow-Origin=
+Access-Control-Allow-Methods=GET,POST,PUT,DELETE
+X-RateLimit-Limit=name=rate-limit-1,60;
+X-RateLimit-Remaining=name=rate-limit-1,59;
+bizToken=VxJvJJbwCz7DbhB/fII+RRSja5wsxfmDI6ginrsc9rs1Epu+nxEo9LMVYLLKCSnYU1pS/A4sKR6R9PR2yyVrPA==
+responseTimeStamp=2020-08-04T05:20:59:156
+Access-Control-Allow-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+X-Akamai-CITISITE=GTDC
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Date=Tue, 04 Aug 2020 05:20:59 GMT
+Content-Length=223
+Connection=keep-alive
+Set-Cookie=CITI_SITE=gtdc; expires=Tue, 04-Aug-2020 05:40:59 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{
+  "modulus": "8aa58f900d7d599ee1cd492c592e0b36ca906d506bde2fbb626db0e9d6d752e0941ea54e3254d5f3a76a45c98c43c6efe4ed687a56b4f6c2fb6337ee4850f7dd54c6f9972b7124565786b62ceb566c36eed79337d799061efd1d115ead0204e426bd51b3110a9651f2438d477a1e75ed73106c8d60818910b205d38bb2968bcd",
+  "exponent": "3"
+}

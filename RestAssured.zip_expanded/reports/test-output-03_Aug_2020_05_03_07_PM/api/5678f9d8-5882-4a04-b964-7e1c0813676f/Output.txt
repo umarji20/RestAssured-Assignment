@@ -1,0 +1,38 @@
+Request : GET
+URI : https://sandbox.apihub.citi.com/gcb/api/v1/cards?cardFunction=ALL
+Headers : 
+Authorization=Bearer AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhSzVuHCSeX14vwrTMVdh7OWUa-YLPCNMB1txzcS9qXHQdQnsLTH4hgKeocrx72hYajEmip2P28SbCF2WDkVQ8RHTyCLWaArW89DS2ULWXm80v0Uw7aECZHqSNO3Ja16atJx1PDwmK45TxxEKz8DHs1GD8Rz-s1304RxOUYgNWGZJxOtnW81xnflc6A-FWxbNMlE9TksE3zMcnvuLDK44HOw
+Accept=application/json
+uuid=d78c9953-2548-4829-b5d3-e69b8a39b31c
+client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+Params : 
+Response : 
+HTTP/1.1 200 OK
+Headers : 
+X-Backside-Transport=OK OK,OK OK,OK OK
+Content-Type=application/json
+Access-Control-Allow-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+Access-Control-Allow-Methods=GET,POST,PUT,DELETE
+Access-Control-Expose-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+Access-Control-Max-Age=2147483647
+Cache-Control=no-cache, no-store
+Citiuuid=ff137f67-ad93-413c-95e0-637107adbd6c
+Client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+Expires=-1
+I-Cif=025056868
+Pragma=no-cache
+Uuid=d78c9953-2548-4829-b5d3-e69b8a39b31c
+X-Application-Context=PSG-SANDBOX:utility,unsecured,stateless,service,pcr,onboard,mutualfund,moneymovementpayee,linkage,insurance,hktv,customer,cardauth,card,banking,account,ids,approuting,override,uat1,sandbox,cloud:1
+X-Vcap-Request-Id=f937dcee-916d-4472-5ded-8773d017adf9
+X-Global-Transaction-ID=ddade3ba5f27f608fd0a0c41
+Access-Control-Allow-Origin=
+mfaCode=tWTll7RkLz3C4CAKGgvxlyPd72K7m3OD60xaM7vKjQqMjcuY5ZIGq28NuwFZzHweS4FrwuEALSY%2F9%2Ft0iBcjrzrfGyTNn6NM%2BGC2Fh6IADF5sebUb35oJUPbUcOIlKe96czjYry%2B0EtZpXsL35%2FTKtpQXyReDxXdls%2FflQrvddl99PXX%2BSMpVrB7gNIXRxYq%2FA9Ygwdzvxxy5aE1jY8hx2oaWDa2B5GJD1EJK0v4C6CbCkaQkCHioVUu6uYDOoSdutHFs8eYQoRP0915XbK3yU47ZvQitYEWzyUa30FL%2Fk48O1JapSQ%2F%2FoX1a65G9Q1tEiEi1hG6eTKUgpt%2B6Kf2p0k2e5XdNz4DhvNrrKyS2%2FoTeF83aHEy%2ByidX2c8dRVxqqis3c4DKWTeKtkzKrE0CptTb0UTTv8x41gdFIBSeps%3D
+X-Akamai-CITISITE=GTDC
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Date=Mon, 03 Aug 2020 11:33:28 GMT
+Content-Length=881
+Connection=keep-alive
+Set-Cookie=CITI_SITE=gtdc; expires=Mon, 03-Aug-2020 11:53:28 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{"cardDetails":[{"cardId":"44125873852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","displayCardNumber":"8653","localCardActivationIndicator":"REPLACE","overseasCardActivationIndicator":"REPLACE","perpetualActivationFlag":true,"overseasCardActivationStartDate":"2016-11-01","overseasCardActivationEndDate":"2016-12-05","currentCreditLimitAmount":5000000.0,"maximumPermanentCreditLimitAmount":5000.25,"maximumTemporaryCreditLimitAmount":5000.25,"minimumCreditLimitDecreaseAmount":10.01,"currentOutstandingAmount":1500.25,"subCardType":"DEBIT","cardHolderType":"PRIMARY","cardIssueReason":"NEWLY_ONBOARDED_CARD","cardFunctionsAllowed":[{"cardFunction":"CREDIT_LIMIT_INCREASE"},{"cardFunction":"LOCAL_CARD_ACTIVATION"},{"cardFunction":"OVERSEAS_CARD_ACTIVATION"},{"cardFunction":"REPORT_LOST_STOLEN"},{"cardFunction":"EPP_BOOKING"},{"cardFunction":"UPDATE_POS_CREDIT_LIMIT"},{"cardFunction":"UPDATE_NON_POS_CREDIT_LIMIT"},{"cardFunction":"E_STATEMENT"},{"cardFunction":"E_ADVICE"},{"cardFunction":"RESET_ATM_PIN"},{"cardFunction":"ADD_SUPPLEMENTARY_CARD"}],"embossName":"Matthew Hyden","organization":"888","logo":"830","productName":"Citibank Platinum Visa","primaryCardId":"3255613852316f2b4d4d796c344e38756339654972776f663745446e6d4c32486f455a4165374a476858343d","displayPrimaryCardNumber":"XXXXXXXXXXXX4521","cardPlasticType":"PAYTAG","currentContactlessWthoutPinPmtLimit":200.0,"maxContactlessWithoutPinPmtLimit":250.0,"posSpendingLimitAmount":250.0,"dailyAtmWithdrawalLimitAmount":250.0,"internetPurchaseLimitAmount":250.0,"dailyTransactionLimitAmount":100.25,"internetPurchaseActivationFlag":true,"travelledCountry":[{"countryCode":"IN"}],"cardSubStatus":"CLOSED_PERMANENT","cardReplacementFeeAmount":250.0,"linkedSupplementaryCardFlag":false,"lostStolenReplacedFlag":false,"cardMigrationFlag":true,"accountType":"FIXED_ACCOUNT","minimumDueAmount":40000.0,"paymentDueDate":"2017-01-12","outstandingBalanceAmount":1500.25,"availableCreditLimit":5000000.0}]}

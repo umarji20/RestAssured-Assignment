@@ -1,0 +1,33 @@
+Request : GET
+URI : https://sandbox.apihub.citi.com/gcb/api/v1/moneyMovement/personalDomesticTransfers/destinationAccounts/sourceAccounts
+Headers : 
+Authorization=Bearer AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhKDg4yEQXuW2L5meFpIC19mdPZ3KV4rlfpvgH62sBWNOTGB94WoNelf5rbpqwVg9N5l9yD2yJxpNoV3uMLAGfhXFjz3iw-tyHmv8bz4QlgKL5zReuAJqrdhax5FYlj4wcUi7klBmOIHWQBvlI_SqQwSs4Yi1VNycyXCwS4AJZMnmgnnEAoMQQ2b9Z68AFNSpA5zQn5yuDkYuLWPTHGuRnuQ
+Accept=application/json
+uuid=0f4eaf56-ebeb-4751-bd8f-67acf9c14af5
+Client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+Params : 
+Response : 
+HTTP/1.1 200 OK
+Headers : 
+X-Backside-Transport=OK OK,OK OK,OK OK
+uuid=0f4eaf56-ebeb-4751-bd8f-67acf9c14af5
+citiuuid=056738ad-cf6c-4d5d-97f5-0e59855d7e97
+apitimestamp_4=2020-08-06T15:57:01.685+08:00
+apitimestamp_1=2020-08-06T15:57:01.668+08:00
+apitimestamp_2=2020-08-06T15:57:01.685+08:00
+Content-Type=application/json
+X-Global-Transaction-ID=126374ce5f2bb7cdcd9631bf
+Access-Control-Expose-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+Access-Control-Allow-Origin=
+Access-Control-Allow-Methods=GET,POST,PUT,DELETE
+Access-Control-Allow-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+mfaCode=2SzIATSC9z%2B2qS9TtQaWz9XpFyhZw6kbCJdqwyQd9IvY9mG1vKW1Qe2rsLv53M%2F3ftGWhUDiwqdO8zMm3IE%2Bzd2CQpoiuTyRNEo1lUNQH1xM4j%2BQErQMgyPMp%2BzZJNneGdVPfUWDJzAmGliRkE5MLNm5RnfoO3KuCx%2FmtCMcG4mEBZ23iy2AL2pcBcWe%2BQL3ydcrxcIKB9G5UpgufYd78E0qGHBEfIA6ecqtQSAvkafD21LTCr797tKQJIimq4CATMosaT67jT4KF%2FAw94%2BDM%2B%2FzOq3Dhbf2or%2B53lCkUFco2ILAUTJDJZIrCzaKy2%2BYxiNLkoqcfgAIEOvWQNkeCNrjB5LpA3I4h%2FUuwLWWnVJzGWuKRf4zuFqAA3WMJuyDHyvIsf5FfExHRRhZiZutNvsqQWCwdp8ckjL8i58EyZM%3D
+X-Akamai-CITISITE=GTDC
+Vary=Accept-Encoding
+Content-Encoding=gzip
+Date=Thu, 06 Aug 2020 07:57:01 GMT
+Content-Length=758
+Connection=keep-alive
+Set-Cookie=CITI_SITE=gtdc; expires=Thu, 06-Aug-2020 08:17:01 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{"sourceAccounts":[{"sourceAccountId":"90007745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d","displaySourceAccountNumber":"XXXXXX9556","sourceAccountCurrencyCode":"BHD","accountGroup":"SAVINGS_AND_INVESTMENTS","availableBalance":40582.18,"productName":"KONTO OSZCZEDNOSCIOWE BHD","accountNickName":"James"},{"sourceAccountId":"76664e6467792f4e53784f4645714f6a6f4f6d53443053582b6359305142594a444e63714b7365536c6c877d","displaySourceAccountNumber":"XXXXXX7364","sourceAccountCurrencyCode":"BHD","accountGroup":"CHECKING","availableBalance":8706,"productName":"KONTO OSOBISTE CITIGOLD","accountNickName":"Antoni"},{"sourceAccountId":"6677332f58466e6e4d67717537337969422b745f44146a6865484d7470736d683436393178494c2b3563566d","displaySourceAccountNumber":"XXXXXX6260","sourceAccountCurrencyCode":"USD","accountGroup":"CHECKING","availableBalance":60352.21,"productName":"SUB. WALUTOWE CITIGOLD USD","accountNickName":"Sophia"},{"sourceAccountId":"788852522b34655255764b546638573230424439313956744f4a69414b71584e6a764a654e5272762b44633d","displaySourceAccountNumber":"XXXXXX7875","sourceAccountCurrencyCode":"BHD","accountGroup":"CREDIT_CARD","availableBalance":9400,"nextPaymentAmount":2500,"productName":"CITIBANK VISA PLATINUM","accountNickName":"Filip"},{"sourceAccountId":"33097745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d","displaySourceAccountNumber":"XXXXXX3336","sourceAccountCurrencyCode":"GBP","accountGroup":"SAVINGS_AND_INVESTMENTS","availableBalance":6546.33,"productName":"KONTO OSZCZEDNOSCIOWE GBP","accountNickName":"Harry"}],"destinationSourceAcctCombinations":[{"destinationAccountId":"90007745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d","displayDestinationAccountNumber":"XXXXXX9556","destinationAccountCurrencyCode":"BHD","availableBalance":40582.18,"sourceAccountIds":[{"sourceAccountId":"6677332f58466e6e4d67717537337969422b745f44146a6865484d7470736d683436393178494c2b3563566d"},{"sourceAccountId":"76664e6467792f4e53784f4645714f6a6f4f6d53443053582b6359305142594a444e63714b7365536c6c877d"},{"sourceAccountId":"788852522b34655255764b546638573230424439313956744f4a69414b71584e6a764a654e5272762b44633d"}],"productName":"KONTO OSZCZEDNOSCIOWE BHD","accountNickName":"James"},{"destinationAccountId":"76664e6467792f4e53784f4645714f6a6f4f6d53443053582b6359305142594a444e63714b7365536c6c877d","displayDestinationAccountNumber":"XXXXXX7364","destinationAccountCurrencyCode":"BHD","availableBalance":8706,"sourceAccountIds":[{"sourceAccountId":"90007745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d"},{"sourceAccountId":"6677332f58466e6e4d67717537337969422b745f44146a6865484d7470736d683436393178494c2b3563566d"},{"sourceAccountId":"788852522b34655255764b546638573230424439313956744f4a69414b71584e6a764a654e5272762b44633d"}],"productName":"KONTO OSOBISTE CITIGOLD","accountNickName":"Antoni"},{"destinationAccountId":"6677332f58466e6e4d67717537337969422b745f44146a6865484d7470736d683436393178494c2b3563566d","displayDestinationAccountNumber":"XXXXXX6260","destinationAccountCurrencyCode":"USD","availableBalance":60352.21,"sourceAccountIds":[{"sourceAccountId":"90007745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d"},{"sourceAccountId":"76664e6467792f4e53784f4645714f6a6f4f6d53443053582b6359305142594a444e63714b7365536c6c877d"},{"sourceAccountId":"788852522b34655255764b546638573230424439313956744f4a69414b71584e6a764a654e5272762b44633d"},{"sourceAccountId":"33097745333946686651706662332f634a375574544020634d706a6574315a2b534565795270615a3533513d"}],"productName":"SUB. WALUTOWE CITIGOLD USD","accountNickName":"Sophia"}]}

@@ -1,0 +1,27 @@
+Request : GET
+URI : https://sandbox.apihub.citi.com/gcb/api/v1/accounts
+Headers : 
+Authorization=AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhgInWVlz5l7PGLiMf3DyhwGMrrjAfeSuuu3VAPw8xz7Z8XEzWMe28QSnAk86t4Fpv8SpEa7M3WOmvaEYaScLHh8uDxW5KwF7ptmUxIwMDA1VV_OtJHkxV3GE3j_MIVFGw1OIpzeNN58yL2eW-ST9B4KZJ3T5CzhWLPq5EPo5_LWcTayeVbwTLAwImjKWPeeL-acHC0OOzODwxW1SExZrR2w
+Accept=application/json
+uuid=807b7a5d-4656-4c94-895d-9c67e8db93e9
+client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+Params : 
+Response : 
+HTTP/1.1 401 Unauthorized
+Headers : 
+X-Backside-Transport=FAIL FAIL,FAIL FAIL
+Content-Type=application/json
+Access-Control-Allow-Methods=GET,POST,PUT,DELETE
+Access-Control-Allow-Origin=
+Access-Control-Allow-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+Access-Control-Expose-Headers=Accept, Accept-Language, Authorization, businessCode, client_id, content-type, countryCode, ChannelId,partnerIdentifier,PartnerCustomerID,CitiCustomerRefId, uuid, x-ibm-client-id,eventid,bizToken,citiuuid,mfaCode,channelindicator,org,relationshipnumber,terminalid,userid,messageid,versionnbr,nextStartIndex,clientDetails,x-fapi-customer-ip-address,x-fapi-customer-last-logged-time,x-fapi-financial-id,accept-compression,x-fapi-interaction-id,customerReferenceId,x-customer-user-agent,x-jws-signature,x-idempotency-key
+WWW-Authenticate=default
+X-Global-Transaction-ID=2b7692085f29b7398cc7aa9f
+X-Akamai-CITISITE=GTDC
+Date=Tue, 04 Aug 2020 19:30:01 GMT
+Transfer-Encoding=chunked
+Connection=keep-alive
+Connection=Transfer-Encoding
+Set-Cookie=CITI_SITE=gtdc; expires=Tue, 04-Aug-2020 19:50:01 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{"type":"error","code":"unAuthorized","details":"Authorization credentials are missing or invalid"}

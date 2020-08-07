@@ -1,0 +1,23 @@
+Request : GET
+URI : https://sandbox.apihub.citi.com/gcb/api/v1/accounts
+Headers : 
+Authorization=AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhadjbJ295Xc_V7TkNI0DFzrQz4ngBGwJ7E_DS5LL5Eim3FBFZjIAEDiZDTzCh6Vj7q7cYYh4Sd7vRCrdcqAYFVZQOuSKOfGq273pTIdgRkkg3wRax-jAnj5Ptp7q1uFo488GHi4JGCiiO0an7tuX6xX9VXww5vqvBnSdN6WK_ostPdei1AIj9x4Kmjw4D-4vVJ7UK7uHEGzp88ht2_dLNmw
+Accept=application/json
+uuid=663b4b35-a9e0-4e8a-aaa2-99fadf4c9522
+client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a
+Params : 
+Response : 
+HTTP/1.1 401 Unauthorized
+Headers : 
+X-Backside-Transport=FAIL FAIL,FAIL FAIL
+Content-Type=application/json
+WWW-Authenticate=default
+X-Global-Transaction-ID=126374ce5f29b6a886113b1f
+X-Akamai-CITISITE=GTDC
+Date=Tue, 04 Aug 2020 19:27:36 GMT
+Transfer-Encoding=chunked
+Connection=keep-alive
+Connection=Transfer-Encoding
+Set-Cookie=CITI_SITE=gtdc; expires=Tue, 04-Aug-2020 19:47:36 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{"type":"error","code":"unAuthorized","details":"Authorization credentials are missing or invalid"}

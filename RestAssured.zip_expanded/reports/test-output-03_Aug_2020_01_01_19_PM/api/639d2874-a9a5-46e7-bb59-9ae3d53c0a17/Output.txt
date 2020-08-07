@@ -1,0 +1,47 @@
+Request : POST
+URI : https://sandbox.apihub.citi.com/gcb/api/clientCredentials/oauth2/token/us/gcb
+Headers : 
+Authorization=Basic YzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhOnRIOGdUOGdDNmtWMmJSM2hLNm1NNWtMM2RUMmNRNGJKOGlONGVIM25BNndXMmFBN3VK
+uuid=b0f22c22-10e4-4e18-86d9-0800a7f4226f
+Accept=application/json
+Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Params : 
+Response : 
+HTTP/1.1 200 OK
+Headers : 
+X-Backside-Transport=OK OK,OK OK,OK OK
+Content-Type=application/json
+X-Global-Transaction-ID=6e68aa425f27bd504e75dc6f
+Accept=application/json
+uuid=b0f22c22-10e4-4e18-86d9-0800a7f4226f
+X-Akamai-True-Client-IP=49.207.196.43
+Pragma=no-cache
+X-DataStream-Session-Id=22f17934-5f27bd50-1e0c23fa
+X_AK_SHAPE_AGGREGATOR_IP=FALSE
+X-Akamai-CONFIG-LOG-DETAIL=true
+Akamai-Origin-Hop=2
+X-Forwarded-For=49.207.196.43, 173.223.235.206
+Cache-Control=no-cache, max-age=0
+X-Client-IP=23.199.49.39,169.175.115.121,153.40.245.129
+dmz-global-txn-id=6e68aa425f27bd504e75dc6f
+X-Archived-Client-IP=23.199.49.39,23.199.49.39,169.175.115.121
+countryCode=US
+businessCode=GCB
+scope=/api
+channelId=INTERNET
+client_id=c9aa2076-1569-4fe6-a902-890041e3ab0a,c9aa2076-1569-4fe6-a902-890041e3ab0a
+client_secret=tH8gT8gC6kV2bR3hK6mM5kL3dT2cQ4bJ8iN4eH3nA6wW2aA7uJ
+Access-Control-Expose-Headers=APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=POST
+X-RateLimit-Limit=name=rate-limit-1,60;
+X-RateLimit-Remaining=name=rate-limit-1,59;
+Authorization=Basic YzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhOnRIOGdUOGdDNmtWMmJSM2hLNm1NNWtMM2RUMmNRNGJKOGlONGVIM25BNndXMmFBN3VK
+Content-Type=application/json
+X-Akamai-CITISITE=GTDC
+Content-Length=393
+Date=Mon, 03 Aug 2020 07:31:29 GMT
+Connection=keep-alive
+Set-Cookie=CITI_SITE=gtdc; expires=Mon, 03-Aug-2020 07:51:29 GMT; path=/; domain=sandbox.apihub.citi.com; secure; HttpOnly
+Body : 
+{ "token_type":"Bearer", "access_token":"AAIkYzlhYTIwNzYtMTU2OS00ZmU2LWE5MDItODkwMDQxZTNhYjBhAMAXK7sJDDaLID-aXhHmHU5X1Vp6X6RHbjjBJLCmfHOHxAnYQI4ChIGDLKMrRVMQZlH0Mq9NDMViOOl1mN049z2lbTl20KAqfINoU3eBcWyrFshrBPCP2WmxLiXiP3XWH3XuYSGCRXjbilucqzZo02t-f9dBYs_4N81kgYSh6oNyK0v-24hKALqmltDTEsutzDmz3JetQE33_SgGtmimBHyOXpALOSudlDPlGVAi7h4", "expires_in":1800, "consented_on":1596439889, "scope":"/api" }
